@@ -1,5 +1,44 @@
+@font-face {
+  font-family: "norseFont";
+  src: url("/Norse-Bold.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  display: flex;
+}
+.image-container {
+  position: relative;
+  height: 1000px;
+  align-items: center;
+}
+
+.odin-logo {
+  position: absolute;
+  top: 20%;
+  background-color: rgb(138, 131, 131, 0.5);
+  width: 100%;
+  color: white;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.odin-logo span {
+  font-family: "norseFont";
+  font-size: 97px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+button {
+  background-color: #596d48;
 }
