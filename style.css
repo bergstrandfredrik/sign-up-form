@@ -78,10 +78,31 @@ form {
   margin-bottom: 20px;
 }
 
+input {
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: 16px;
+}
+
 input:focus {
-  border: blue;
+  box-shadow: 0 0 5px 1px rgb(72, 0, 255);
+}
+
+input:invalid {
+  border-color: red;
+  box-shadow: 0 0 5px 1px rgb(255, 4, 0);
+}
+
+input:valid {
+  background-color: chartreuse;
 }
 
 button {
+  padding: 10px 20px;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
   background-color: #596d48;
+  margin-bottom: 10px;
 }

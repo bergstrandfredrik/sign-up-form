@@ -49,11 +49,25 @@
           </div>
           <div class="form-input">
             <label for="phone">PHONE NUMBER</label>
-            <input type="text" id="phone" name="phone" pattern="" required />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              pattern="\d+\d-\d+"
+              required
+              placeholder="0712-345678"
+              minlength="11"
+            />
           </div>
           <div class="form-input">
             <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" required />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              required
+            />
           </div>
           <div class="form-input">
             <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -61,6 +75,7 @@
               type="password"
               id="confirm-password"
               name="confirm-password"
+              minlength="8"
               required
             />
           </div>
